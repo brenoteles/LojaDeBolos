@@ -1,0 +1,34 @@
+{
+    "produtos" : [
+      {
+        "nome" : "Ninho Branco",
+        "preco" : "R$ 20,00",
+        "imagem" : "imagens/ninho-branco.jpg"
+      },
+      {
+        "nome" : "Ninho Escuro",
+        "preco" : "R$ 20,00",
+        "imagem" : "imagens/ninho-escuro.jpg"
+      },
+      {
+        "nome" : "Ninho Napolitano",
+        "preco" : "R$ 20,00",
+        "imagem" : "imagens/ninho-napolitano.jpg"
+      },
+      {
+        "nome" : "Ninho Trufado",
+        "preco" : "R$ 20,00",
+        "imagem" : "imagens/ninho-trufado.jpg"
+      },
+      {
+        "nome" : "Prestigio",
+        "preco" : "R$ 20,00",
+        "imagem" : "imagens/prestigio.jpg"
+      },
+      {
+        "nome" : "Sensação",
+        "preco" : "R$ 20,00",
+        "imagem" : "imagens/sensacao.jpg"
+      }
+    ]
+  }

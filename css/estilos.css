@@ -1,0 +1,92 @@
+#area-cabecalho{
+	background-color: #8B4513;
+	text-align: center;
+	width: 100%;
+}
+
+#area-cabecalho a:Link, #area-cabecalho a:visited{
+	color: #D3D3D3;
+	padding: 8px 10px;
+
+}
+#area-cabecalho a:hover{
+	color: #D2691E;
+	background: #FFF;
+	text-decoration: none;
+}
+
+@media (max-width: 600px) {
+	#area-logo img {
+		display: block;
+		width:250px;
+		margin: 0px auto;
+		margin-bottom: 7px;
+	}
+	#area-cabecalho{
+		font-size: 35px;
+	}
+}
+@media (min-width: 601px){
+	#area-logo img {
+		display: block;
+		width:150px;
+		margin: 0px auto;
+		margin-bottom: 7px;
+	}
+	#area-cabecalho{
+		font-size: 25px;
+	}
+}
+
+.container-ofertas ul{ 		/* tamanho das imagens são definidos "automaticamente"*/
+	margin: 0px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-ofertas li{
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+	text-align: center;
+}
+
+.container-ofertas a{
+	text-decoration: none;
+	color: black;
+}
+
+.container-ofertas{
+	border: 5px groove #008B8B;
+	font-size: 25px;
+	background: #FFF0F5;
+}
+
+
+/*  formatação do formulario de contato */
+
+#div_formulario{
+	border: 1px solid red;
+	margin: 0px auto;
+	
+}
+
+#div_formulario form{
+	font-size: 16px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#div_formulario input, textarea{
+	width: 470px;
+	padding: 10px;
+}
+
+#div_formulario textarea{
+	height: 120px;
+	line-height: 20px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<title>Conclua Sua Compra - Cantinho dos Bolos</title>
+    	<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<style>
+			.navbar {
+				margin: 0;
+			}
+    	</style>
+  	</head>
+	
+	<body>
+
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Para nós será um prazer fazer um bolo para você!</h1>
+  				<p>Após o confirmo do pedido entraremos em contato com você via Whatsapp para combinar o dia em que você poderá vir retirar o bolo.</p>
+  			</div>
+  		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h2 class="panel-title">Sua compra</h2>
+						</div>
+			
+						<div class="panel-body">
+							<img src="../images/ninho-branco.jpg" alt="Bolo escolhido: Ninho Branco" class="img-thumbnail img-responsive">
+							<dl>
+								<dt>Bolo escolhido:</dt>
+								<dd>Ninho Branco</dd>
+                        
+                                <dt>Quantidade</dt>
+                                <dd><input type="text" id = "quantidade" value = "1" name = quantidade></dd>
+
+								<dt>Preço</dt>
+								<dd><output	for="quantidade" id = "preco" name="preco">R$ 40,00</output></dd>
+								
+							</dl>
+						</div>
+					</div>
+				</div>
+
+				<form action="contas.jsp" method="POST" class="col-sm-8">
+					<div class="row">
+						<fieldset class="col-sm-6">
+							<legend>Dados pessoais</legend>
+
+							<div class="form-group">
+								<label for="nome">Nome completo</label>
+								<input type="text" class="form-control" id="nome" name="nome" autofocus required>
+							</div>
+
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+							</div>
+
+							<div class="form-group">
+								<label for="cpf">CPF</label>
+								<input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+							</div>
+
+							<div class="form-group">
+								<label for="telefone">Telefone</label>
+								<input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(11)91111-1111" required>
+							</div>
+						</fieldset>
+
+						<fieldset class="col-sm-6">
+							<legend>Cartão de Crédito</legend>
+
+							<div class="form-group">
+								<label for="numero-cartao">Número - CVV</label>
+								<input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+							</div>
+
+							<div class="form-group">
+								<label for="bandeira-cartao">Bandeira</label>
+								<select name="bandeira-cartao" id="bandeira-cartao" class="form-control">
+									<option value="master">MasterCard</option>
+									<option value="visa">VISA</option>
+									<option value="amex">American Express</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="validade-cartao">Validade</label>
+								<input type="month" class="form-control" id="validade-cartao" name="validade-cartao">
+							</div>
+						</fieldset>
+					</div>
+
+					<button type="submit" class="btn btn-primary pull-right">
+						<span class="glyphicon glyphicon-thumbs-up"></span>
+						Confirmar Pedido
+					</button>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript" src = "../js/scripts.js"> </script>
+	</body>
+</html>
